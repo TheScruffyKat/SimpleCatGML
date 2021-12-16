@@ -1,6 +1,8 @@
 # SimpleCatGML
 A script interpreter for Game-maker Studio 2 
 
+TO USE: OPEN FILE AND COPY CONTENTS!
+
 
 Hello! I've put together a simple script runner for gamemaker. Simply run runScriptFile(file) and watch it run! You can also run strings of code rather than files with runScriptAsLine(stringText).
 

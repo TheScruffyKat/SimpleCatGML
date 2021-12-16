@@ -14,17 +14,27 @@ PLEASE NOTE: This is still in development and is UN-FINISHED. I must also note t
 ///////////////////////////////////////////////////////////////////
 
 DOCUMENTATION:
-turn [amount]
-add_x [amount]
-add_y [amount]
-set_x [amount] 
-set_y [amount]
-set_sprite [sprite] \
-set_alpha [amount 0-1]
-add_alpha [amount 0-1]
-set_frame [frameNum]
-animation_speed [fps]
-create_object [object]
 
+turn [amount]
+
+add_x [amount]
+
+add_y [amount]
+
+set_x [amount] 
+
+set_y [amount]
+
+set_sprite [sprite] 
+
+set_alpha [amount 0-1]
+
+add_alpha [amount 0-1]
+
+set_frame [frameNum]
+
+animation_speed [fps]
+
+create_object [object]
 
 [more coming soon]

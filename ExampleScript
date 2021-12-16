@@ -1,0 +1,13 @@
+add_x 1
+turn -1
+
+
+
+
+
+//yes I know, it's that simple
+
+
+
+//NOTE THAT IT CAN ALSO BE DISPLAYED ON ONE LINE LIKE THIS:
+// add_x 1 turn -1

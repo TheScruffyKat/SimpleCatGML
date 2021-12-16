@@ -1,0 +1,91 @@
+//created by thescruffykat on github, please do not delete this line
+//IN DEVELOPMENT
+
+function decodeFunction(funcString) {
+	count = 0
+	current = 0
+	funcParams[0] = "";
+	for(i = 0; i < string_length(funcString); i += 1) {
+		count++
+		if(string_char_at(funcString, count) != " ") {
+			funcParams[current] = funcParams[current] + string_char_at(funcString, count)
+		}
+		else {
+			current++
+			funcParams[current] = "";
+		}
+	}
+		
+	
+	return funcParams
+}
+
+function failedFunction(reason = "unkown error") {
+	show_message("ERROR OCCURED IN SCRIPT: " + reason);	
+	game_end();
+}
+
+function runScriptFile(file) {
+	ofile = file_text_open_read(file);
+	
+}
+
+function runScriptAsLine(line) {
+	tempS = decodeFunction(line);
+	runFunction(tempS);
+}
+
+function runFunction(funcArray) {
+	count = 0;
+	cap = array_length(funcArray);
+	while (count < cap) {
+		
+		cline = funcArray[count]
+		if(cline=="turn") {
+			count++
+			image_angle += real(funcArray[count]);	
+		}
+		
+		else if(cline=="add_x") {
+			count++
+			x += real(funcArray[count]);
+		}
+		
+		else if(cline=="add_y") {
+			count++
+			y += real(funcArray[count]);
+		}
+		
+		else if(cline=="set_y") {
+			count++
+			y = real(funcArray[count]);
+		}
+		else if(cline=="set_x") {
+			count++
+			x = real(funcArray[count]);
+		}
+		
+		else if(cline=="set_alpha") {
+			count++
+			image_alpha = real(funcArray[count]);
+		}
+		else if(cline=="add_alpha") {
+			count++
+			image_alpha += real(funcArray[count]);
+		}
+		
+		else if(cline=="set_sprite") {
+			count++
+			try {
+				sprite_index = asset_get_index(funcArray[count]);
+			}
+			catch(_exception) {
+				failedFunction("code error - unavailable sprite")
+			}
+		}
+		
+		else {failedFunction("Invalid Command")}
+		count++
+	}
+	
+}

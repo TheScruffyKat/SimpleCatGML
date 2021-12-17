@@ -31,10 +31,12 @@ set_alpha [amount 0-1]
 
 add_alpha [amount 0-1]
 
-set_frame [frameNum] //in dev//
+set_frame [frameNum] 
 
-animation_speed [fps] //in dev//
+animation_speed [fps] 
 
 create_object [object] //in dev//
+
+goto_mouse
 
 [more coming soon]

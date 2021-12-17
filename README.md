@@ -30,7 +30,7 @@ set_sprite [sprite]
 
 set_alpha [amount 0-1]
 
-add_alpha [amount 0-1]
+add_alpha [amount]
 
 set_frame [frameNum] 
 

@@ -41,4 +41,8 @@ create_object [object] //in dev//
 
 goto_mouse
 
+preset_rpgMovement
+
+await_grab
+
 [more coming soon]

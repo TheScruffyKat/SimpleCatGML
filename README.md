@@ -1,7 +1,6 @@
 # SimpleCatGML
 A script interpreter for Game-maker Studio 2 
 
-#!!! Project is actively being worked on, project text and code do not match, come back later!
 
 TO USE: OPEN FILE AND COPY CONTENTS!
 

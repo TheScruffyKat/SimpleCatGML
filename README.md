@@ -1,6 +1,8 @@
 # SimpleCatGML
 A script interpreter for Game-maker Studio 2 
 
+Notice: I currently cannot work on this because my pc's power supply is broken.
+
 
 TO USE: OPEN FILE AND COPY CONTENTS!
 
